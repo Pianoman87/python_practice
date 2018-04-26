@@ -14,5 +14,6 @@ urlpatterns = [
     url(r'^clear$', views.clear),
     url(r'^amadon_homepage$', views.amadon_homepage),
     url(r'^buy$', views.buy),
-    url(r'^amadon_cart$', views.amadon_cart),    # This line has changed!
+    url(r'^amadon_cart$', views.amadon_cart),
+    url(r'^logout$', views.logout),
 ]

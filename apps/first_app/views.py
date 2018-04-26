@@ -138,3 +138,12 @@ def amadon_cart(request):
     "total": total
     }
     return render(request, "first_app/amadon_cart.html", context)
+
+def logout(request):
+    request.session['first_name'] = ""
+    request.session['last_name'] = ""
+    request.session['counter'] = 0
+    request.session['random_word'] = ""
+    request.session['grand_total'] = 0.0
+    print "User has been logged out"
+    return redirect('/')

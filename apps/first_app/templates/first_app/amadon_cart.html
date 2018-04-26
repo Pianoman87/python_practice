@@ -17,4 +17,8 @@
   <h3>You have spent a total of ${{grand_total}} so far.</h3>
   <p><a href="/amadon_homepage">Continue Shopping</link></a></p>
   </body>
+  <form class="logout" action="logout" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Logout">
+  </form>
 </html>

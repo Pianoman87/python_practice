@@ -18,5 +18,9 @@
           <h4>Favorite Genre: {{genre}}</h4>
           <h4>Preferred Language: {{language}}</h4>
       </div>
+      <form class="logout" action="logout" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Logout">
+      </form>
   </body>
 </html>

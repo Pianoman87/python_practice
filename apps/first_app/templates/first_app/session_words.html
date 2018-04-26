@@ -35,5 +35,9 @@
         <input type="submit" class="button" name="submit" value="Clear Session">
       </form>
     </div>
+    <form class="logout" action="logout" method="post">
+      {% csrf_token %}
+      <input type="submit" value="Logout">
+    </form>
   </body>
 </html>

@@ -24,7 +24,10 @@
           <option value="french">French</option>
         </select><br>
       <input type="submit" value="submit">
-
+    </form>
+    <form class="logout" action="logout" method="post">
+      {% csrf_token %}
+      <input type="submit" value="Logout">
     </form>
   </body>
 </html>

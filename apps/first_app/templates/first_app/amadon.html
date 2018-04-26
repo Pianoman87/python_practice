@@ -65,5 +65,9 @@
           </tr>
           </form>
     </table>
+    <form class="logout" action="logout" method="post">
+      {% csrf_token %}
+      <input type="submit" value="Logout">
+    </form>
   </body>
 </html>
